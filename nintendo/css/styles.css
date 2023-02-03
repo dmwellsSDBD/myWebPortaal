@@ -1,0 +1,262 @@
+/* CSS Document */
+/***********************************************************
+Color Scheme                     Font Scheme
+#FFDC00 - Bowser Yellow            font-family: 'Chewy', cursive;
+#3C9F2E - Luigi Green              font-family: 'Lora', serif;
+#FDFEFE - White                    font-family: 'Work Sans', sans-serif;
+#E31826 - Mario Red                font-family: 'Philosopher', sans-serif;
+#4668D3 - Blue
+***********************************************************/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FDFEFE;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/********Header Section*************************************/
+header {
+    min-height: 250px;
+}
+
+header img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 10em;
+}
+header h2 {
+    margin: 0;
+    padding: 0 200px 5px 75px;
+    background-color: #e00101;
+    font-size: 4em;
+    color: #FDFEFE;
+}
+
+nav {
+    font-family: 'Philosopher', sans-serif;
+    background-color: #4668D3;
+    min-height: 50px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 0;
+    margin: 0;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 0 0 45px;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FDFEFE;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFDC00;
+}
+/*********Main Section**************************************/
+main {
+    /*min-height: 800px;*/
+    background: url("../images/marioCharacters2.png") fixed center no-repeat;
+    background-size: contain;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 1000px;
+    /*min-height: 800px;*/
+    background-color: #4668D3cc;
+    padding-bottom: 25px;
+}
+
+.article {
+    /*min-height: 800px;*/
+    /*padding: 10px -10px;*/
+    padding: 0 15px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #FDFEFE;
+}
+
+.article p {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.article img {
+    max-width: 50%;
+    float: right;
+    border-radius: 15px;
+    border: 5px solid #FFDC00;
+    margin: 15px;
+}
+
+h1 {
+    
+}
+
+h2 {
+    color: #FFDC00;
+    font-size: 2.8em;
+    /*background: #3C9F2Ecc;*/
+    text-align: right;
+    padding-right: 10%;
+    border-bottom: 10px double #FDFEFE;
+}
+h3 {
+    color: #FFDC00;
+}
+
+blockquote {
+    padding: 0 20px;
+    font-weight: bold;
+    color: #FDFEFE;
+    text-align: justify;
+    font-style: italic;
+    font-size: 1em;
+}
+
+blockquote .imgLeft {
+    float: left;
+}
+
+figure {
+    min-height: 300px;
+    border-bottom: 5px dotted #FFDC00;
+}
+
+figure:last-child {
+    border-bottom: none;
+}
+
+figcaption {
+    color: #FFDC00;
+    font-size: 2em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+cite {
+    padding-left: .5em;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 0;
+    /*border: 1px solid black;*/
+}
+
+input {
+    height: 3em;
+    width: 20em;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color:#A68160;
+    color: #E4F2EA;
+    border: 5px double #734F2F;
+}
+
+.frmButton {
+    margin-left: 15px;
+    width: 10em;
+    background-color: #778A8C;
+}
+
+.frmButton:hover {
+    background-color: #734F2F;
+    color: #A68160;
+}
+
+label {
+    padding: 0 25px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.article dl dd {
+    padding-bottom: 100px;
+}
+
+.smilesCons, .smilesEmp, .smilesSupp {
+    min-height: 350px;
+    border-bottom: 5px dotted #FFDC00;
+    margin-bottom: 25px;
+}
+
+.smilesEmp:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.hisImgRight {
+    width: 25%;
+}
+
+.smilesSupp .imgLeft{
+    float: left;
+}
+/*********Footer Section************************************/
+footer {
+    clear: both;
+    padding-top: 50px;
+    background-color:#3C9F2E;
+    background-image: url("../images/newsletter_logoMario35.png"), url("../images/newsletter_logoMario35.png");
+    background-size: 15%, 15%;
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    min-height: 200px;
+}
+
+footer nav {
+    background-color: #3C9F2E00;
+    font-size: 1em;
+    font-family: 'Philosopher', sans-serif;
+}
+
+footer nav a {
+    color: #FFDC00;
+}
+
+footer nav a:hover {
+    color: #FDFEFE;
+    text-decoration: underline;
+}
+
+.copy {
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1em;
+    line-height: 2px;
+    font-weight: bold;
+    color: #FDFEFE;
+    text-align: center;
+}
