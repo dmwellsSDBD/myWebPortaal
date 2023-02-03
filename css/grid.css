@@ -1,0 +1,46 @@
+/* CSS Document */
+
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 400px) {
+		#projects {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas:
+				"prjH prjH prjH"
+				"prj5 prj6 prj7";
+			justify-content: center;
+			grid-gap: 1% 1%;
+		}
+
+		#prjHeader {
+			grid-area: prjH;
+			max-height: 70px;
+			background-color: #F25C05 ;
+
+		}
+
+		#prj5 {
+			grid-area: prj5;
+			/* background-color: green; */
+		}
+
+		#prj6 {
+			grid-area: prj6;
+			/* background: white; */
+		}
+
+		#prj7 {
+			grid-area: prj7;
+			/* background: blue; */
+		}
+
+		#prj8 {
+			grid-area: prj8;
+			background: red;
+		}
+
+	}
+
+}
